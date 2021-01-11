@@ -1,0 +1,106 @@
+.body {
+	margin: 0 auto;
+	padding: 0px, 0px, 0px, 0px;
+	width: 100%;
+}
+
+.card-text {
+	color: darkslategray;
+	font-weight: bold;
+	margin: 0 auto;
+	width: 100%;
+	padding-right: 0px;
+}
+
+.row {
+	margin-right: 0px;
+}
+
+.ul {
+	padding-right: 0px !Important;
+}
+
+.container {
+	margin: 50px, 0px;
+}
+
+.jumbotron {
+	background-color: steelblue;
+}
+
+.jumbotron,
+h1,
+h2,
+p {
+	color: floralwhite;
+}
+
+.card-body {
+	margin: 0 auto;
+}
+
+.card-text.completed {
+	background-color: mediumseagreen;
+	color: floralwhite;
+	text-decoration-line: line-through;
+	text-decoration-color: black;
+}
+
+.card-header {
+	color: darkslategray;
+	font-weight: bold;
+}
+
+input[type=checkbox] {
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+#switch-label {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 100px;
+	height: 50px;
+	background: grey;
+	display: block;
+	border-radius: 50px;
+	position: relative;
+}
+
+#switch-label:after {
+	content: '';
+	position: absolute;
+	top: 3px;
+	left: 4px;
+	width: 45px;
+	height: 45px;
+	background: #fff;
+	border-radius: 45px;
+	transition: 0.3s;
+}
+
+input:checked + #switch-label {
+	background: steelblue;
+}
+
+input:checked + #switch-label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+/* label:active:after {
+	width: 130px;
+} */
+
+/* body {
+	height: 100vh;
+} */
+
+.dark {
+	background-color: rgb(1, 0, 2);
+	color: white;
+}
+.dark a {
+	color: lightskyblue;
+}
